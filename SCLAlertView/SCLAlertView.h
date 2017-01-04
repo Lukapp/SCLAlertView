@@ -76,6 +76,7 @@ typedef NS_ENUM(NSInteger, SCLAlertViewShowAnimation)
  */
 typedef NS_ENUM(NSInteger, SCLAlertViewBackground)
 {
+    SCLAlertViewBackgroundLightShadow,
     SCLAlertViewBackgroundShadow,
     SCLAlertViewBackgroundBlur,
     SCLAlertViewBackgroundTransparent

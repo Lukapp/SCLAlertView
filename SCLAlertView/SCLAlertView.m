@@ -1196,6 +1196,14 @@ SCLTimerDisplay *buttonTimer;
 
 #pragma mark - Background Effects
 
+- (void)makeLightShadowBackground
+{
+    _backgroundView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _backgroundView.backgroundColor = [UIColor blackColor];
+    _backgroundView.alpha = 0.3f;
+    _backgroundOpacity = 0.3f;
+}
+
 - (void)makeShadowBackground
 {
     _backgroundView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
@@ -1231,6 +1239,8 @@ SCLTimerDisplay *buttonTimer;
 {
     switch (_backgroundType)
     {
+        case SCLAlertViewBackgroundLightShadow:
+            [self makeLightShadowBackground];
         case SCLAlertViewBackgroundShadow:
             [self makeShadowBackground];
             break;
