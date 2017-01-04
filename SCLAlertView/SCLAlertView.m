@@ -404,6 +404,9 @@ SCLTimerDisplay *buttonTimer;
     
     // Adjust corner radius, if a value has been passed
     _contentView.layer.cornerRadius = self.cornerRadius ? self.cornerRadius : 5.0f;
+    
+    // Adjust border width, if a value has been passed
+    _contentView.layer.borderWidth = self.borderWidth ? self.borderWidth : 0.5f;
 }
 
 #pragma mark - UIViewController
