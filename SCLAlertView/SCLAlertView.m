@@ -630,6 +630,8 @@ SCLTimerDisplay *buttonTimer;
 
 - (void)addCustomTextField:(UITextField *)textField
 {
+    [self addObservers];
+    
     // Update view height
     self.windowHeight += textField.bounds.size.height + 10.0f;
     
